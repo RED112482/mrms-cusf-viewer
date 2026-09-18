@@ -3,7 +3,7 @@ services:
     name: mrms-cusf-viewer
     runtime: docker
     plan: starter
-    healthCheckPath: /healthz
+    healthCheckPath: /api/metadata
     envVars:
       - key: MRMS_CACHE_DIR
         value: /tmp/mrms_unit_streamflow_cache
