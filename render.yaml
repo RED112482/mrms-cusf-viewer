@@ -2,7 +2,7 @@ services:
   - type: web
     name: mrms-cusf-viewer
     runtime: docker
-    plan: starter
+    plan: free
     healthCheckPath: /api/metadata
     envVars:
       - key: MRMS_CACHE_DIR
@@ -10,7 +10,7 @@ services:
       - key: ENABLE_BACKGROUND_ARCHIVE
         value: "0"
       - key: WEB_CONCURRENCY
-        value: "2"
+        value: "1"
       - key: WEB_THREADS
         value: "4"
       - key: WEB_TIMEOUT
